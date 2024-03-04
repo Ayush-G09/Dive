@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "f45e01693885454ca3a58ede5c1f4bc1";
-const redirectUri = "http://localhost:3000";
+const redirectUri = "https://dive-one.vercel.app";
 const scopes = ["user-library-read", "playlist-read-private", "user-top-read"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
